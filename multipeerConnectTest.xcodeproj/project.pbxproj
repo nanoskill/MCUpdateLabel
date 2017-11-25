@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		B7B57DEE1FC8D8B4008B4C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B57DED1FC8D8B4008B4C9D /* AppDelegate.swift */; };
-		B7B57DF01FC8D8B4008B4C9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B57DEF1FC8D8B4008B4C9D /* ViewController.swift */; };
 		B7B57DF31FC8D8B4008B4C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B57DF11FC8D8B4008B4C9D /* Main.storyboard */; };
 		B7B57DF51FC8D8B4008B4C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B57DF41FC8D8B4008B4C9D /* Assets.xcassets */; };
 		B7B57DF81FC8D8B4008B4C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B57DF61FC8D8B4008B4C9D /* LaunchScreen.storyboard */; };
+		B7B57E001FC8DDE2008B4C9D /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B57DFF1FC8DDE2008B4C9D /* CreateViewController.swift */; };
+		B7B57E021FC8DE41008B4C9D /* ConnectivityCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B57E011FC8DE41008B4C9D /* ConnectivityCode.swift */; };
+		B7E8C3D51FC8EC6C002ABE6D /* AdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8C3D41FC8EC6C002ABE6D /* AdvertViewController.swift */; };
+		B7E8C3D71FC8EC77002ABE6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8C3D61FC8EC77002ABE6D /* ViewController.swift */; };
+		B7E8C3DF1FC95132002ABE6D /* SharingScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8C3DE1FC95132002ABE6D /* SharingScreenController.swift */; };
+		B7E8C3E31FC961F0002ABE6D /* ReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E8C3E21FC961F0002ABE6D /* ReceiverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B7B57DEA1FC8D8B4008B4C9D /* multipeerConnectTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multipeerConnectTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B57DED1FC8D8B4008B4C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7B57DEF1FC8D8B4008B4C9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B7B57DF21FC8D8B4008B4C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7B57DF41FC8D8B4008B4C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7B57DF71FC8D8B4008B4C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7B57DF91FC8D8B4008B4C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7B57DFF1FC8DDE2008B4C9D /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		B7B57E011FC8DE41008B4C9D /* ConnectivityCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityCode.swift; sourceTree = "<group>"; };
+		B7E8C3D41FC8EC6C002ABE6D /* AdvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertViewController.swift; sourceTree = "<group>"; };
+		B7E8C3D61FC8EC77002ABE6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7E8C3DE1FC95132002ABE6D /* SharingScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingScreenController.swift; sourceTree = "<group>"; };
+		B7E8C3E21FC961F0002ABE6D /* ReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				B7B57DED1FC8D8B4008B4C9D /* AppDelegate.swift */,
-				B7B57DEF1FC8D8B4008B4C9D /* ViewController.swift */,
 				B7B57DF11FC8D8B4008B4C9D /* Main.storyboard */,
 				B7B57DF41FC8D8B4008B4C9D /* Assets.xcassets */,
 				B7B57DF61FC8D8B4008B4C9D /* LaunchScreen.storyboard */,
 				B7B57DF91FC8D8B4008B4C9D /* Info.plist */,
+				B7B57DFF1FC8DDE2008B4C9D /* CreateViewController.swift */,
+				B7B57E011FC8DE41008B4C9D /* ConnectivityCode.swift */,
+				B7E8C3D41FC8EC6C002ABE6D /* AdvertViewController.swift */,
+				B7E8C3D61FC8EC77002ABE6D /* ViewController.swift */,
+				B7E8C3DE1FC95132002ABE6D /* SharingScreenController.swift */,
+				B7E8C3E21FC961F0002ABE6D /* ReceiverViewController.swift */,
 			);
 			path = multipeerConnectTest;
 			sourceTree = "<group>";
@@ -136,8 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B57DF01FC8D8B4008B4C9D /* ViewController.swift in Sources */,
+				B7E8C3D71FC8EC77002ABE6D /* ViewController.swift in Sources */,
+				B7B57E001FC8DDE2008B4C9D /* CreateViewController.swift in Sources */,
 				B7B57DEE1FC8D8B4008B4C9D /* AppDelegate.swift in Sources */,
+				B7E8C3E31FC961F0002ABE6D /* ReceiverViewController.swift in Sources */,
+				B7E8C3D51FC8EC6C002ABE6D /* AdvertViewController.swift in Sources */,
+				B7E8C3DF1FC95132002ABE6D /* SharingScreenController.swift in Sources */,
+				B7B57E021FC8DE41008B4C9D /* ConnectivityCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU9SZALD7M;
 				INFOPLIST_FILE = multipeerConnectTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.binus.multipeerConnectTest;
@@ -289,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SU9SZALD7M;
 				INFOPLIST_FILE = multipeerConnectTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.binus.multipeerConnectTest;
