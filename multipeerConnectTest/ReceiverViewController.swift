@@ -27,7 +27,23 @@ class ReceiverViewController: UIViewController, MCSessionDelegate {
 
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState)
     {
-        
+        if state == .connected
+        {
+            let popup = UIAlertController(title: "Connected", message: "You are now connected with \(peerID.displayName)", preferredStyle: .alert)
+            let popupOk = UIAlertAction(title: "Okay", style: .default, handler: nil)
+            popup.addAction(popupOk)
+            self.present(popup, animated: true, completion: nil)
+        }
+        if state == .notConnected
+        {
+            let popup = UIAlertController(title: "Disconnected", message: "Connection to \(peerID.displayName) has been lost", preferredStyle: .alert)
+            let popupOk = UIAlertAction(title: "Okay", style: .default, handler: {
+                (UIAlertAction) in
+                self.navigationController?.popViewController(animated: true)
+            })
+            popup.addAction(popupOk)
+            self.present(popup, animated: true, completion: nil)
+        }
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID)

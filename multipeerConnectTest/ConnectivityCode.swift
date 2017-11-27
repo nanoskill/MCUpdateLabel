@@ -20,7 +20,7 @@ class ConnectivityModel : NSObject
 {
     let connectionType = "grouffee"
     
-    let myPeerId = MCPeerID(displayName: "\(UIDevice.current.name) (\(UIDevice.current.localizedModel))")
+    let myPeerId = MCPeerID(displayName: "\(UIDevice.current.name) (\(UIDevice.current.model))")
     
     let serviceAdvertiser : MCNearbyServiceAdvertiser
     let serviceBrowser : MCNearbyServiceBrowser

@@ -51,6 +51,10 @@ extension AdvertViewController: ConnectivityModelDelegate
     }
     
     func connectedWithPeer(peerID: MCPeerID, state: MCSessionState) {
+        OperationQueue.main.addOperation {
+            let stateString = (state == .connected ? "Connected" : (state == .notConnected ? "Disconnected" : "Connecting"))
+            self.theLabel.text = "\(stateString) with \(peerID.displayName)"
+        }
         if state == .connected
         {
             let popup = UIAlertController(title: "Connected", message: "You are now connected with \(peerID.displayName)", preferredStyle: .alert)
@@ -62,15 +66,16 @@ extension AdvertViewController: ConnectivityModelDelegate
                 })
             popup.addAction(popupOk)
             self.present(popup, animated: true, completion: nil)
+            OperationQueue.main.addOperation {
+                self.theLoading.isHidden = true
+            }
         }
         if state == .notConnected
         {
-            let popup = UIAlertController(title: "Disonnected", message: "Connection to \(peerID.displayName) has been lost", preferredStyle: .alert)
+            let popup = UIAlertController(title: "Disconnected", message: "Connection to \(peerID.displayName) has been lost", preferredStyle: .alert)
             let popupOk = UIAlertAction(title: "Okay", style: .default, handler: nil)
             popup.addAction(popupOk)
             self.present(popup, animated: true, completion: nil)
         }
     }
-    
-    
 }
